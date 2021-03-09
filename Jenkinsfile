@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'pip3 install -r requirements.txt'
+        sh 'sudo -H pip install -r requirements.txt'
       }
     }
     stage('test') {
       steps {
-        sh 'python3 test.py'
+        sh 'python test.py'
       }
       post {
         always {
