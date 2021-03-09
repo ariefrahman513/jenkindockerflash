@@ -3,7 +3,6 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh'--no-cache-dir'
         sh'pip install -U pip --user'
         sh 'pip install -r requirement.txt'
       }
