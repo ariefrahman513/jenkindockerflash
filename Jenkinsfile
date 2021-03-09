@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'pip install -r requirement.txt --user'
+        sh 'pip install -r requirement.txt'
       }
     }
     stage('test') {
